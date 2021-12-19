@@ -64,6 +64,9 @@ export const Album = new GraphQLObjectType({
       type: GraphQLString,
       resolve: ({ more_info }) => more_info.encrypted_media_url,
     },
+    type: {
+      type: GraphQLString,
+    },
   }),
 });
 export const Playlist = new GraphQLObjectType({
